@@ -279,7 +279,7 @@ class StatusMenuStatColumn extends StatelessWidget {
                     figureId: "unknown",
                     ownerId: "unknown",
                     scale: scale),
-              if (hasPlagueHerald && isMonster)
+              if (hasPlagueHerald && (isMonster || vm.isObjective))
                 StatusMenuStackableConditionButtons(
                     notifier: figure.plague,
                     stackableCondition: Condition.plague,
